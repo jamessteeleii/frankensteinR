@@ -1,0 +1,16 @@
+Package: frankensteinR
+Title: Setup a Quarto Website to Host a Living Meta-Analysis (It's Alive, My Creation is Alive!)
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+    person(given = "James",
+           family = "Steele",
+           role = c("aut", "cre"),
+           email = "james@steele-research.com",
+           comment = c(ORCID = "0000-0002-8003-0757"))
+           )
+Description: The goal of frankensteinR is to make the creation of a living meta-analysis quick and easy. It enables you to set up a quarto website to host you meta-analysis, report methods/protocols, share data, and enable others to contribute.
+License: CC BY 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
