@@ -33,6 +33,7 @@ create_living_analysis <- function(path = "living_analysis",
                                    footer = paste0(license, " (",
                                                    format(Sys.Date(), "%Y"),
                                                    ") ", authors),
+                                   css = "",
                                    light_theme = "flatly",
                                    dark_theme = "darkly",
                                    df_print = "kable",
@@ -55,7 +56,6 @@ create_living_analysis <- function(path = "living_analysis",
   }
 
   requireNamespace("glossary")
-  # if (webexercises) requireNamespace("webexercises")
 
   path <- path.expand(path)
 
@@ -99,26 +99,14 @@ create_living_analysis <- function(path = "living_analysis",
   yml$project$`output-dir` = output_dir
 
   yml$website$title = title
-  # yml$website$subtitle = subtitle
-  # yml$website$author = alist
   yml$website$description = description
-  # yml$website$license = license
   yml$website$`google-analytics` = google_analytics
-  # yml$website$downloads = downloads
-  # yml$website$sharing = sharing
   yml$website$`body-footer` = footer
   yml$website$`margin-header` = margin_header
 
   yml$format$html$`df-print` <- df_print
   yml$format$html$theme$light[[1]] <- light_theme
   yml$format$html$theme$dark[[1]] <- dark_theme
-
-  # if (length(socials) > 0) {
-  #   social_links <- lapply(names(socials), function(icon) {
-  #     list(icon = icon, href = socials[[icon]])
-  #   })
-  #   yml$website$`page-footer`$right <- social_links
-  # }
 
   write_yaml(yml, file.path(path, "_quarto.yml"))
   usethis::ui_done("Modified _quarto.yml")
@@ -144,7 +132,7 @@ create_living_analysis <- function(path = "living_analysis",
   gstyle <- utils::capture.output(glossary::glossary_style())
   gstyle <- gstyle[2:(length(gstyle)-1)]
   write(gstyle, file.path(path, "include", "glossary.css"))
-  # write(css, file.path(path, "include", "style.css"), append = TRUE)
+  write(css, file.path(path, "include", "style.css"), append = TRUE)
   rfiles <- system.file("quarto/R", package = "frankensteinR")
   file.copy(rfiles, path, recursive = TRUE)
   images <- system.file("quarto/images", package = "frankensteinR")

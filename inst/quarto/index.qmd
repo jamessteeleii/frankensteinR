@@ -1,34 +1,27 @@
 # Overview {.unnumbered}
 
-Welcome to the quarto living meta-analysis website template. Customize your book setup by editing the following code. It will create a project at the specified path (e.g., the code below will create a new folder called "book" in your working directory), render the demo book in Quarto, open the book in a web browser, and open the project in a new RStudio window. 
+Welcome to the quarto living meta-analysis website template. Customize your website setup by editing the following code. It will create a project at the specified path (e.g., the code below will create a new folder called "living_analysis" in your working directory), render the demo website in Quarto, open the website in a web browser to preview, and open the project in a new RStudio window. 
 
 ```{r, eval = FALSE}
-# create_book(
-#   path = "book",
-#   title = "Book Template",
-#   subtitle = "",
-#   authors = "Me",
-#   description = "Book Description",
-#   output_dir = "docs",
-#   license = "CC-BY",
-#   google_analytics = "",
-#   socials = list(),
-#   downloads = c("pdf", "epub"),
-#   sharing = c("twitter", "facebook", "linkedin"),
-#   margin_header = "",
-#   footer = paste0(license, " (",
-#                   format(Sys.Date(), "%Y"),
-#                   ") ", authors),
-#   light_theme = "flatly",
-#   dark_theme = "darkly",
-#   css = stripes(),
-#   df_print = "kable",
-#   webexercises = TRUE,
-#   open = rlang::is_interactive(),
-#   render = TRUE
-# )
+create_book(
+  path = "living_analysis",
+  title = "Living Meta-Analysis",
+  authors = "Me",
+  description = "Description of Living Analysis",
+  output_dir = "docs",
+  license = "CC-BY",
+  google_analytics = "",
+  margin_header = "",
+  footer = paste0(license, " (",
+                  format(Sys.Date(), "%Y"),
+                  ") ", authors),
+  light_theme = "flatly",
+  dark_theme = "darkly",
+  df_print = "kable",
+  open = rlang::is_interactive(),
+  render = TRUE
+)
 ```
 
-See @sec-instructions for details of how to further customize the book.
 
 
