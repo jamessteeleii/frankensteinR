@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+.dark-mode,
+.dark-light .cell-output-display figure,
+.dark-light .cell-output-display img
+{ display: none; }
+
+.light-mode,
+.dark-light .cell-output-display + .cell-output-display figure ,
+.dark-light .cell-output-display + .cell-output-display img
+{ display: block; }
+
+.terminal {
+  border-color: #D6DADC;
+}

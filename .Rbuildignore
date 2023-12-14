@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
+^frankensteinR\.Rcheck$
+^frankensteinR.*\.tar\.gz$
+^frankensteinR.*\.tgz$

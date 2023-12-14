@@ -1,0 +1,70 @@
+lang: en
+# language: include/_language.yml
+
+project:
+  type: website
+  output-dir: docs
+  resources: resources
+
+execute:
+  freeze: auto # re-render only changed chapters
+
+editor: visual
+
+website:
+  title: Living Meta-Analysis
+  navbar:
+    left:
+      - text: Welcome
+        href: index.qmd
+      # - text: Methods/Protocol
+      #   href: methods.qmd
+      # - text: Results
+      #   href: results.qmd
+      # - text: Contribute
+      #   href: contribute.qmd
+  description: ""
+  open-graph: true
+  cookie-consent: false
+  google-analytics: ""
+  page-navigation: true
+  search: true
+  # comments:
+  #   hypothesis:
+  #     theme: clean
+  #     openSidebar: false
+  # downloads: []
+  # sharing: []
+  page-footer:
+    left: ""
+    right: ""
+
+
+bibliography: include/references.bib
+csl: include/apa.csl
+
+format:
+  html:
+    theme:
+      light:
+      - flatly
+      - include/light.scss
+      dark:
+      - darkly
+      - include/dark.scss
+    css:
+    - https://use.fontawesome.com/releases/v5.13.0/css/all.css
+    # - include/booktem.css
+    # - include/webex.css
+    # - include/glossary.css
+    - include/style.css
+    df-print: kable
+    code-link: true
+    code-fold: false
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: hover
+    highlight-style: a11y
+    mainfont: ""
+    monofont: ""
+    include-after-body: [include/webex.js, include/script.js]
