@@ -1,6 +1,29 @@
+#' Create a template website for living meta-analysis
+#'
+#' @description
+#' #' Create a template website for a living meta-analysis. You can add details of the methods/protocol, results, and allow others to contribute
+#'
+#' @param path path to the location for your website on your machine
+#' @param title title of the living meta-analysis
+#' @param authors authors of the living meta-analysis
+#' @param description short description of the living meta-analysis
+#' @param output_dir directory to render the website output to
+#' @param license what license to add (CC-BY only for now)
+#' @param google_analytics the google analytics address
+#' @param margin_header defaults to ""
+#' @param footer defaults to "license (YEAR) author"
+#' @param light_theme "flatly" (see https://quarto.org/docs/output-formats/html-themes.html)
+#' @param dark_theme "darkly"
+#' @param df_print how to print tables (default, kable, tibble, paged)
+#' @param open whether to activate the new project in RStudio
+#' @param render whether to render the quarto website when opening
+#'
+#' @return sets up a project and renders the demo website
+#' @export
+#' @importFrom rlang is_interactive
+#'
 create_living_analysis <- function(path = "living_analysis",
                                    title = "Living Meta-Analysis",
-                                   subtitle = "",
                                    authors = "Me",
                                    description = "Description of Living Analysis",
                                    output_dir = "docs",
@@ -15,6 +38,8 @@ create_living_analysis <- function(path = "living_analysis",
                                    df_print = "kable",
                                    open = rlang::is_interactive(),
                                    render = TRUE) {
+
+
   # checks ----
   requireNamespace("knitr")
   # prompt quarto install if not available
