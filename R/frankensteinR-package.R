@@ -3,7 +3,7 @@
 #' Creates a template quarto website for a living meta-analysis.
 #'
 #' @docType package
-#' @name booktem
+#' @name frankensteinR
 #' @keywords package
 #' @import knitr
 #' @import kableExtra
