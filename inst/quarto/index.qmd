@@ -3,7 +3,7 @@
 Welcome to the quarto living meta-analysis website template. Customize your website setup by editing the following code. It will create a project at the specified path (e.g., the code below will create a new folder called "living_analysis" in your working directory), render the demo website in Quarto, open the website in a web browser to preview, and open the project in a new RStudio window. 
 
 ```{r, eval = FALSE}
-create_book(
+create_living_analysis(
   path = "living_analysis",
   title = "Living Meta-Analysis",
   authors = "Me",
