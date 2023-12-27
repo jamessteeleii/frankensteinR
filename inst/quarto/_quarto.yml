@@ -17,8 +17,8 @@ website:
     left:
       - text: Welcome
         href: index.qmd
-      # - text: Methods/Protocol
-      #   href: methods.qmd
+      - text: Methods/Protocol
+        href: methods.qmd
       # - text: Results
       #   href: results.qmd
       # - text: Contribute
