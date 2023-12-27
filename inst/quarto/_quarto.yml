@@ -7,7 +7,7 @@ project:
   resources: resources
 
 execute:
-  freeze: auto # re-render only changed chapters
+  freeze: auto # re-render only changed tabs
 
 editor: visual
 

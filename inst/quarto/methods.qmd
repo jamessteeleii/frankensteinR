@@ -1,0 +1,3 @@
+# Methods/Protocol {.unnumbered}
+
+On this tab you can report the methods used for your living analysis.

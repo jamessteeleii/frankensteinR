@@ -124,7 +124,7 @@ create_living_analysis <- function(path = "living_analysis",
                     "\\.qmd$",
                     full.names = TRUE)
   sapply(qmd, file.copy, path)
-  usethis::ui_done("Added demo files")
+  usethis::ui_done("Added demo qmd files")
 
   ## includes and R directories ----
   include <- system.file("quarto/include", package = "frankensteinR")
@@ -144,11 +144,7 @@ create_living_analysis <- function(path = "living_analysis",
   if (df_print == "dt") {
     write("source(\"R/dt_tables.R\")", file = rprofpath, append = TRUE)
   }
-  # if (webexercises) {
-  #   suppressMessages(
-  #     webexercises::add_to_quarto(quarto_dir = path,
-  #                                 include_dir = "include"))
-  # }
+
   write("source(\"R/my_setup.R\")", file = rprofpath, append = TRUE)
 
   usethis::ui_done("Added auxillary files")
