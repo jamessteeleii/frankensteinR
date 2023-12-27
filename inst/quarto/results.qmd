@@ -1,0 +1,3 @@
+# Results {.unnumbered}
+
+On this tab you can report the results of your living analysis.

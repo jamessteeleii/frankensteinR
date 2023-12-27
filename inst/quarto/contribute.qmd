@@ -1,0 +1,3 @@
+# Contribute {.unnumbered}
+
+On this tab you can add details to allow researchers to contribute data from their studies to your living analysis.

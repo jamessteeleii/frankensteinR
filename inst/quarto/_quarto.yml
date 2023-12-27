@@ -19,10 +19,10 @@ website:
         href: index.qmd
       - text: Methods/Protocol
         href: methods.qmd
-      # - text: Results
-      #   href: results.qmd
-      # - text: Contribute
-      #   href: contribute.qmd
+      - text: Results
+        href: results.qmd
+      - text: Contribute
+        href: contribute.qmd
   description: ""
   open-graph: true
   cookie-consent: false
