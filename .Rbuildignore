@@ -1,7 +1,14 @@
-^frankensteinR\.Rproj$
+README.md
+README.Rmd
+LICENSE.md
+test.qmd
+.travis.yml
+.*[.]Rproj
+.github
+roxygen2.*[.]R
+^.*\.Rproj$
 ^\.Rproj\.user$
-^LICENSE\.md$
-^README\.Rmd$
 ^frankensteinR\.Rcheck$
 ^frankensteinR.*\.tar\.gz$
 ^frankensteinR.*\.tgz$
+github_token

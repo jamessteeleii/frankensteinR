@@ -14,6 +14,7 @@ create_living_analysis(
   google_analytics = "",
   margin_header = "",
   footer = paste0(license, " (", format(Sys.Date(), "\%Y"), ") ", authors),
+  css = "",
   light_theme = "flatly",
   dark_theme = "darkly",
   df_print = "kable",
@@ -40,6 +41,8 @@ create_living_analysis(
 
 \item{footer}{defaults to "license (YEAR) author"}
 
+\item{css}{TODO: describe argument}
+
 \item{light_theme}{"flatly" (see https://quarto.org/docs/output-formats/html-themes.html)}
 
 \item{dark_theme}{"darkly"}
@@ -54,5 +57,5 @@ create_living_analysis(
 sets up a project and renders the demo website
 }
 \description{
-#' Create a template website for a living meta-analysis. You can add details of the methods/protocol, results, and allow others to contribute
+Create a template website for a living meta-analysis. You can add details of the methods/protocol, results, and allow others to contribute
 }
