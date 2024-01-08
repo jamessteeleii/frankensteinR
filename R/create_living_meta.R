@@ -1,7 +1,7 @@
 #' Create a template website for living meta-analysis
 #'
 #' @description
-#' #' Create a template website for a living meta-analysis. You can add details of the methods/protocol, results, and allow others to contribute
+#' Create a template website for a living meta-analysis. You can add details of the methods/protocol, results, and allow others to contribute
 #'
 #' @param path path to the location for your website on your machine
 #' @param title title of the living meta-analysis
@@ -12,6 +12,7 @@
 #' @param google_analytics the google analytics address
 #' @param margin_header defaults to ""
 #' @param footer defaults to "license (YEAR) author"
+#' @param css TODO: describe argument
 #' @param light_theme "flatly" (see https://quarto.org/docs/output-formats/html-themes.html)
 #' @param dark_theme "darkly"
 #' @param df_print how to print tables (default, kable, tibble, paged)
